@@ -99,16 +99,7 @@ const Home: NextPage = () => {
             />
           </div>
           <button className="button button4">
-            WHAT WE TREAT &nbsp;
-            <span className={styles.icon}>
-              <FontAwesomeIcon
-                style={{
-                  fontWeight: "bold",
-                  float: "right",
-                }}
-                icon={faChevronDown}
-              />
-            </span>
+            <p>WHAT WE TREAT</p>
           </button>
         </div>
         <div className={styles.mainhead}>
@@ -157,20 +148,21 @@ const Home: NextPage = () => {
           </div>
 
           {/* Practice */}
-          <div className="row">
-            <div className="h5">
-              <div className={styles.scrollmenu}>
-                <a href="#home">Everyday Health</a>
-                <a href="#news">All</a>
-                <a href="#contact">Hair</a>
-                <a href="#about">Lifestyle</a>
-                <a href="#about">Mental Health</a>
-                <a href="#about">Sex</a>
-                <a href="#about">Skin</a>
+          <div className="container">
+            <div className="row">
+              <div className="h5">
+                <div className={styles.scrollmenu}>
+                  <a href="#home">Everyday Health</a>
+                  <a href="#news">All</a>
+                  <a href="#contact">Hair</a>
+                  <a href="#about">Lifestyle</a>
+                  <a href="#about">Mental Health</a>
+                  <a href="#about">Sex</a>
+                  <a href="#about">Skin</a>
+                </div>
               </div>
             </div>
           </div>
-
           <div className={styles.borderContainer + " mt-4 mb-2"}></div>
         </div>
 
@@ -195,427 +187,429 @@ const Home: NextPage = () => {
       </main>
 
       {/* Footer */}
-      <div
-        className="row justify-content-evenly text-white pt-5 pb-5 px-2"
-        style={{ backgroundColor: "black" }}
-      >
-        <div className="col-md-2 pt-2 ">
-          <h3
-            className="pb-3 "
-            style={{ marginLeft: "6%", fontWeight: "650", fontSize: "160%" }}
-          >
-            Get the latest <br /> from Hims
-          </h3>
-          <input
-            type="email"
-            placeholder="Email address"
-            className="px-3 "
-            style={{
-              width: "90%",
-              height: "10%",
-              borderRadius: "6px",
-              backgroundColor: "black",
-              color: "#ffffff",
-              fontWeight: "900px",
-              outline: "none",
-              border: "0.5px solid grey",
-              marginLeft: "6%",
-            }}
-          />
-        </div>
-        <div className="col-md-2 pt-5 " style={{ paddingLeft: "60px" }}>
-          <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
-            Popular
-          </h6>
-          <p className="">
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
+      <div className="container-fluid bg-black">
+        <div
+          className="row justify-content-evenly text-white pt-5 pb-5 px-2 container"
+          style={{ backgroundColor: "black" }}
+        >
+          <div className="col-md-2 pt-2 ">
+            <h3
+              className="pb-3 "
+              style={{ marginLeft: "6%", fontWeight: "650", fontSize: "160%" }}
             >
-              Viagra®
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none"
+              Get the latest <br /> from Hims
+            </h3>
+            <input
+              type="email"
+              placeholder="Email address"
+              className="px-3 "
               style={{
-                fontWeight: "600",
-                fontSize: "85%",
+                width: "90%",
+                height: "10%",
+                borderRadius: "6px",
+                backgroundColor: "black",
+                color: "#ffffff",
+                fontWeight: "900px",
+                outline: "none",
+                border: "0.5px solid grey",
+                marginLeft: "6%",
               }}
-            >
-              Sildenafil
-            </a>
-            <br />
-            <h6
-              style={{
-                fontSize: "75%",
-                fontWeight: "600",
-                color: "gray",
-              }}
-            >
-              Generic for Viagra®
+            />
+          </div>
+          <div className="col-md-2 pt-5 " style={{ paddingLeft: "60px" }}>
+            <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
+              Popular
             </h6>
-
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Cialis®
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Tadalafil
-            </a>
-            <h6 style={{ fontSize: "75%", fontWeight: "600", color: "gray" }}>
-              Generic for Cialis®
-            </h6>
-
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Minoxidil Solution
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Finasteride Pills
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Topical Finasteride
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Sertraline
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Sertraline for PE
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                marginTop: "100px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Premature <br /> Ejaculation Pills
-            </a>
-          </p>
-        </div>
-        <div className="col-md-2 pt-5" style={{ paddingLeft: "50px" }}>
-          <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
-            Learn
-          </h6>
-          <p>
-            <a
-              href="#"
-              className="link-light text-decoration-none"
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              About Us
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              How It Works
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Our Medical Experts
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Savoir Faire
-            </a>
-            <br />
-            <h6
-              style={{
-                fontSize: "75%",
-                fontWeight: "600",
-                color: "gray",
-              }}
-            >
-              (It’s our blog)
-            </h6>
-
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Medical Review
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Advocacy
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Purpose
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Reviews
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Investors
-            </a>
-          </p>
-        </div>
-        <div className="col-md-2 pt-5 " style={{ paddingLeft: "35px" }}>
-          <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
-            Connect
-          </h6>
-          <p>
-            <a
-              href="#"
-              className="link-light text-decoration-none  "
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Help Center
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              contact@forhims.com
-            </a>
-            <h6
-              style={{
-                fontSize: "75%",
-                fontWeight: "600",
-                color: "gray",
-                lineHeight: "20px",
-              }}
-            >
-              (If you are a customer seeking support)
-            </h6>
-
-            <a
-              href="#"
-              className="link-light text-decoration-none "
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              press@forhims.com
-            </a>
-            <br />
-            <h6
-              style={{
-                fontSize: "75%",
-                fontWeight: "600",
-                color: "gray",
-                lineHeight: "20px",
-              }}
-            >
-              Important: FOR MEDIA ONLY. Do not use for customer service
+            <p className="">
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Viagra®
+              </a>
               <br />
-              inquires. press@forhims.com <br /> goes to a third party — never
-              send personal, medical, or health information to this <br />{" "}
-              address. Support <br /> inquiries will not be addressed.
-            </h6>
-          </p>
-        </div>
-        <div className="col-md-2 pt-5 " style={{ paddingLeft: "25px" }}>
-          <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
-            Careers
-          </h6>
-          <p>
-            <a
-              href="#"
-              className="link-light text-decoration-none"
-              style={{
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Professionals
-            </a>
-            <br />
-            <a
-              href="#"
-              className="link-light text-decoration-none"
-              style={{
-                lineHeight: "40px",
-                fontWeight: "600",
-                fontSize: "85%",
-              }}
-            >
-              Providers
-            </a>
-          </p>
-        </div>
+              <a
+                href="#"
+                className="link-light text-decoration-none"
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Sildenafil
+              </a>
+              <br />
+              <h6
+                style={{
+                  fontSize: "75%",
+                  fontWeight: "600",
+                  color: "gray",
+                }}
+              >
+                Generic for Viagra®
+              </h6>
 
-        <div className="row bg-black">
-          <Image
-            src={logo}
-            width="60%"
-            height="-10%"
-            style={{ border: "1px solid blue" }}
-          />
-          <div className="col-8 bg-black ">
-            <p
-              style={{
-                fontSize: "70%",
-                margin: "2%",
-              }}
-              className="text-white justify-content-evenly"
-            >
-              <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
-                Terms & conditions
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Cialis®
               </a>
-              <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
-                Privacy Policy
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Tadalafil
               </a>
-              <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
-                sitemap
-              </a>
-              <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
-                CCPA: Do Not Sell My Personal Information
-              </a>
-            </p>
-            <p
-              style={{
-                marginTop: "-1%",
+              <h6 style={{ fontSize: "75%", fontWeight: "600", color: "gray" }}>
+                Generic for Cialis®
+              </h6>
 
-                fontSize: "70%",
-                paddingLeft: "4%",
-                fontWeight: "600",
-                width: "auto",
-              }}
-            >
-              © 2022 Hims & Hers Health, Inc. All rights reserved. HIMS, HERS,
-              H, and HIMS & HERS are trademarks of Hims, Inc.
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Minoxidil Solution
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Finasteride Pills
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Topical Finasteride
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Sertraline
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Sertraline for PE
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  marginTop: "100px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Premature <br /> Ejaculation Pills
+              </a>
             </p>
           </div>
-          <div className="col-4"></div>
+          <div className="col-md-2 pt-5" style={{ paddingLeft: "50px" }}>
+            <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
+              Learn
+            </h6>
+            <p>
+              <a
+                href="#"
+                className="link-light text-decoration-none"
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                About Us
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                How It Works
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Our Medical Experts
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Savoir Faire
+              </a>
+              <br />
+              <h6
+                style={{
+                  fontSize: "75%",
+                  fontWeight: "600",
+                  color: "gray",
+                }}
+              >
+                (It’s our blog)
+              </h6>
+
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Medical Review
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Advocacy
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Purpose
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Reviews
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Investors
+              </a>
+            </p>
+          </div>
+          <div className="col-md-2 pt-5 " style={{ paddingLeft: "35px" }}>
+            <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
+              Connect
+            </h6>
+            <p>
+              <a
+                href="#"
+                className="link-light text-decoration-none  "
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Help Center
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                contact@forhims.com
+              </a>
+              <h6
+                style={{
+                  fontSize: "75%",
+                  fontWeight: "600",
+                  color: "gray",
+                  lineHeight: "20px",
+                }}
+              >
+                (If you are a customer seeking support)
+              </h6>
+
+              <a
+                href="#"
+                className="link-light text-decoration-none "
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                press@forhims.com
+              </a>
+              <br />
+              <h6
+                style={{
+                  fontSize: "75%",
+                  fontWeight: "600",
+                  color: "gray",
+                  lineHeight: "20px",
+                }}
+              >
+                Important: FOR MEDIA ONLY. Do not use for customer service
+                <br />
+                inquires. press@forhims.com <br /> goes to a third party — never
+                send personal, medical, or health information to this <br />{" "}
+                address. Support <br /> inquiries will not be addressed.
+              </h6>
+            </p>
+          </div>
+          <div className="col-md-2 pt-5 " style={{ paddingLeft: "25px" }}>
+            <h6 style={{ fontSize: "75%", fontWeight: "650" }} className="pb-4">
+              Careers
+            </h6>
+            <p>
+              <a
+                href="#"
+                className="link-light text-decoration-none"
+                style={{
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Professionals
+              </a>
+              <br />
+              <a
+                href="#"
+                className="link-light text-decoration-none"
+                style={{
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                  fontSize: "85%",
+                }}
+              >
+                Providers
+              </a>
+            </p>
+          </div>
+
+          <div className="row bg-black">
+            <Image
+              src={logo}
+              width="60%"
+              height="-10%"
+              style={{ border: "1px solid blue" }}
+            />
+            <div className="col-8 bg-black ">
+              <p
+                style={{
+                  fontSize: "70%",
+                  margin: "2%",
+                }}
+                className="text-white justify-content-evenly"
+              >
+                <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
+                  Terms & conditions
+                </a>
+                <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
+                  Privacy Policy
+                </a>
+                <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
+                  sitemap
+                </a>
+                <a href="#" style={{ margin: "2%", fontWeight: "600" }}>
+                  CCPA: Do Not Sell My Personal Information
+                </a>
+              </p>
+              <p
+                style={{
+                  marginTop: "-1%",
+
+                  fontSize: "70%",
+                  paddingLeft: "4%",
+                  fontWeight: "600",
+                  width: "auto",
+                }}
+              >
+                © 2022 Hims & Hers Health, Inc. All rights reserved. HIMS, HERS,
+                H, and HIMS & HERS are trademarks of Hims, Inc.
+              </p>
+            </div>
+            <div className="col-4"></div>
+          </div>
         </div>
       </div>
       {/* Footer */}

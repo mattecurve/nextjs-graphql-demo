@@ -19,30 +19,35 @@
   margin-right: 2%;
   margin-top: 1%;
 }
+
+.mainHims button p {
+  font-size: 75%;
+  font-weight: 780;
+  width: fit-content;
+}
 .mainHims button {
   text-align: center;
   border: none;
   outline: none;
   background-color: #ffffff;
-  height: 30px;
-  font-weight: 780;
+  height: 35px;
+
   box-shadow: 0px 8px 15px rgba(0.1, 0.1, 0.1, 0.1);
 
-  width: 125px;
+  width: fit-content;
   font-family: "Signika Negative", sans-serif;
-  font-size: 75%;
+
   border-radius: 20px;
   display: inline-block;
   text-decoration: none;
   float: right;
   margin-right: 2%;
-  margin-top: 0.8%;
+  margin-top: 0.5%;
   padding: 1%;
 }
 
 .main {
   min-height: 100vh;
-
   flex: 1;
   display: flex;
   flex-direction: column;
