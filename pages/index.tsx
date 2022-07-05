@@ -112,7 +112,7 @@ const Home: NextPage = () => {
           </button>
         </div>
         <div className={styles.mainhead}>
-          <div>
+          <div className="container">
             <div className="row">
               <div className="col-lg-6 col-12 ">
                 <h1
