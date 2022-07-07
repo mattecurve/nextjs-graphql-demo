@@ -1,6 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;600&display=swap");
+.header {
+  background-color: #fff;
+}
+
 .mainHims {
   background-color: #ffffff;
   padding: 0.3%;
@@ -8,46 +9,42 @@
 }
 
 .mainHims h2 {
-  margin-left: 2%;
+  margin-left: 20px;
   font-family: "Gentium Book Plus", serif;
   font-weight: 900;
   font-size: 200%;
   display: inline-block;
 }
+
 .hamburg {
   float: right;
-  margin-right: 2%;
-  margin-top: 1%;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .mainHims button p {
-  font-size: 75%;
-  font-weight: 780;
-  width: fit-content;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
 }
+
 .mainHims button {
+  width: 120px;
+  padding: 0;
   text-align: center;
   border: none;
   outline: none;
   background-color: #ffffff;
   height: 35px;
-
   box-shadow: 0px 8px 15px rgba(0.1, 0.1, 0.1, 0.1);
-
-  width: fit-content;
-  font-family: "Signika Negative", sans-serif;
-
   border-radius: 20px;
-  display: inline-block;
   text-decoration: none;
   float: right;
-  margin-right: 2%;
-  margin-top: 0.5%;
-  padding: 1%;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
 .main {
-  min-height: 100vh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -66,24 +63,30 @@
   text-decoration: underline;
 }
 
-.mainhead {
+.mainHead {
   margin-top: 0.1%;
   width: 100%;
   background-color: #b7c7c9;
 }
+
 .title {
-  font-weight: bold;
+  font-family: SofiaProWeb, Helvetica, Arial, sans-serif;
+  font-weight: bolder;
   line-height: 1.1;
-  font-size: 4.6rem;
+  font-size: 4rem;
   margin-top: 28%;
-  margin-left: 18%;
+  margin-left: 0;
 }
 
-.title,
 .description {
-  ont-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
   text-align: start;
+  color: rgba(0, 0, 0, 0.88);
+  font-family: SofiaProWeb, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  font-size: 1.50rem;
+  line-height: 1.5;
+  max-width: 426px;
 }
 
 .description {
@@ -91,22 +94,35 @@
   line-height: 1.5;
   font-size: 1.3rem;
   font-weight: 500;
-  margin-left: 18%;
+  margin-left: 0;
 }
+
 .image {
   float: right;
-
   width: 80%;
+  max-height: 592px;
 }
+
+@media (max-width: 992px) {
+  .image {
+    float: none;
+    width: 100%;
+  }
+
+  .description {
+    margin: auto;
+  }
+}
+
 .partTwo {
   margin-top: -1%;
 }
-.ptag {
-  color: #d3835c;
-  margin-top: 10%;
 
-  font-weight: 500;
+.discoverLabel {
+  color: rgb(204, 131, 92);
+  padding-top: 8rem;
 }
+
 .navlist {
   text-decoration: none;
   color: inherit;
@@ -117,9 +133,16 @@
   color: grey;
   font-weight: 460;
 }
+
 .explore h2 {
   font-weight: bold;
-  font-size: 370%;
+  font-size: 53px;
+}
+
+@media (max-width: 768px) {
+  .explore h2 {
+    font-size: 40px;
+  }
 }
 
 .code {
@@ -148,7 +171,6 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  /* max-width: 300px; */
 }
 
 .card:hover,
@@ -180,6 +202,7 @@
     flex-direction: column;
   }
 }
+
 @media (max-width: 600px) {
   .image {
     width: 100%;
@@ -231,6 +254,20 @@
   justify-content: center;
 }
 
+.emailInput {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  padding: 1.25rem 1rem;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: padding 120ms linear 0s;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 360px;
+}
+
 .footer a {
   display: flex;
   justify-content: center;
@@ -238,65 +275,40 @@
   flex-grow: 1;
 }
 
-.footerfirst {
-  color: #ffffff;
-  margin-top: 2.4%;
-
-  margin-left: -5.2%;
-}
-.footerfirst h3 {
-  font-weight: 650;
-  line-height: 1.3;
-}
-.column {
-  /* border: 1px solid red; */
-  font-size: small;
-  margin-right: 6.5%;
-  margin-top: 5.5%;
-  color: #ffffff;
-  font-size: 85%;
-}
-.column h6 {
+.emailInputTitle {
   font-weight: 700;
-  font-size: 106%;
 }
 
-.rows {
-  display: flex;
-  justify-content: space-between;
+.footerGroupLink {
+  color: #fff;
+  background: inherit;
+  padding-left: 0;
+}
+.footerGroupLink a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footerGroupLink span {
+  font-size: 0.875rem;
+  color: rgb(117, 117, 117);
 }
 
-.popularprt {
-  margin-top: 60%;
+.termsFooterSection img {
+  width: 76px;
+  min-height: 65px;
 }
-.popularprt a p {
-  margin-bottom: 8%;
-  font-weight: 600;
-  font-size: 115%;
-  cursor: pointer;
-  /* text-align: end; */
-}
-/*  */
-.scrollmenu {
-  background-color: #faf8f5;
-  overflow: auto;
-
-  white-space: nowrap;
+.termsFooterSection a {
+  font-size: 0.8rem;
 }
 
-.scrollmenu a {
-  padding: 0.5%;
-
-  margin-left: 3%;
-  margin-right: 4.3%;
+.scrollMenu a {
+  padding: 0 10px;
+  font-size: 1.5rem;
   display: inline-block;
-
   color: gray;
   text-align: center;
   font-weight: 400;
-  /* text-decoration: none; */
 }
-
-.scrollmenu a:hover {
+.scrollMenu a:hover {
   color: #303030;
 }
