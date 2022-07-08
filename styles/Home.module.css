@@ -292,6 +292,10 @@
   font-size: 0.875rem;
   color: rgb(117, 117, 117);
 }
+.footerGroupLink a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .termsFooterSection img {
   width: 76px;
@@ -299,6 +303,8 @@
 }
 .termsFooterSection a {
   font-size: 0.8rem;
+  color: inherit;
+  text-decoration: none;
 }
 
 .scrollMenu a {
@@ -308,7 +314,9 @@
   color: gray;
   text-align: center;
   font-weight: 400;
+  text-decoration: none;
 }
 .scrollMenu a:hover {
   color: #303030;
+  text-decoration: none;
 }
