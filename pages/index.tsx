@@ -116,20 +116,24 @@ const Home: NextPage = () => {
   ];
 
   const loadMoreFun = (pageNumber: number) => {
-    const url = `/api/articles?page=${pageNumber}`;
-    fetchArticleData(url)
-      .then((articles) => {
-        articleList.push(...articles);
-        setArticleList(articleList);
-        if (articles.length === 30) {
-          setNextPage(pageNumber + 1);
-          setLoadMore(true);
-        } else {
-          setLoadMore(false);
-        }
-      })
-      .catch(console.log);
+    // const url = `/api/articles?page=${pageNumber}`;
+    // fetchArticleData(url)
+    //   .then((articles) => {
+    //     articleList.push(...articles);
+    //     setArticleList(articleList);
+    //     if (articles.length === 30) {
+    //       setNextPage(pageNumber + 1);
+    //       setLoadMore(true);
+    //     } else {
+    //       setLoadMore(false);
+    //     }
+    //   })
+    //   .catch(console.log);
   };
+
+  const addNewPost = (article: IArticle) => {
+    setArticleList([...articleList, article]);
+  }
 
   const listItems = articleList.map((article) => (
     <ArticleCard article={article} />
@@ -139,7 +143,7 @@ const Home: NextPage = () => {
       <div className={styles.container + 'container-fluid'}>
           <HeadTag />
           <header className='header'>
-            <TopMenu />
+            <TopMenu onAddNewPost={(data: IArticle) => addNewPost(data) } />
           </header>
           <main className={styles.main}>
               <BannerSection />

@@ -8,7 +8,7 @@ interface IGetArticleParams {
   };
 }
 
-enum ArticleType {
+export enum ArticleType {
   Story = 'story',
 }
 

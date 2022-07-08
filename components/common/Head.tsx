@@ -10,6 +10,8 @@ export function HeadTag() {
           rel='stylesheet'
           href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css'
         />
+        <script
+          src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"></script>
     </Head>
   );
 }
