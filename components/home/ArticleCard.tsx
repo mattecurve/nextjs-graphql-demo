@@ -1,4 +1,4 @@
-import styles from "./../../../styles/Home.module.css";
+import styles from "./../../styles/Home.module.css";
 
 export function ArticleCard(props: any) {
   const {article} = props;

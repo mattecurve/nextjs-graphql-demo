@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./../../../styles/Home.module.css";
-import logo from "./../../../public/logo.png";
+import styles from "./../../styles/Home.module.css";
+import logo from "./../../public/logo.png";
 
 export function FooterMenu(props: any) {
   return (

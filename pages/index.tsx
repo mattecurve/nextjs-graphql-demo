@@ -3,14 +3,14 @@ import { useState } from "react";
 import InfiniteScroll from "react-infinite-scroller";
 
 import styles from "../styles/Home.module.css";
-import { IArticle } from "./services/article.service";
-import { TopMenu } from './components/home/TopMenu';
-import { BannerSection } from './components/home/BannerSection';
-import { DiscoverMore, ExploreSection } from './components/home/Explore';
-import { Footer } from './components/common/Footer';
-import { HeadTag } from './components/common/Head';
-import { Loader } from './components/common/Loader';
-import { ArticleCard } from './components/home/ArticleCard';
+import { IArticle } from "../services/article.service";
+import { TopMenu } from '../components/home/TopMenu';
+import { BannerSection } from '../components/home/BannerSection';
+import { DiscoverMore, ExploreSection } from '../components/home/Explore';
+import { Footer } from '../components/common/Footer';
+import { HeadTag } from '../components/common/Head';
+import { Loader } from '../components/common/Loader';
+import { ArticleCard } from '../components/home/ArticleCard';
 
 const fetchArticleData = async (url: string) => {
   const res = await fetch(url)

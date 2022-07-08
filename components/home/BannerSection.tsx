@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./../../../styles/Home.module.css";
-import HomeImage from "./../../../public/hims-blog-atf.png";
+import styles from "./../../styles/Home.module.css";
+import HomeImage from "./../../public/hims-blog-atf.png";
 
 export function BannerSection() {
   return (

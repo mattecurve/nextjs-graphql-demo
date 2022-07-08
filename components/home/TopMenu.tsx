@@ -1,6 +1,6 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./../../../styles/Home.module.css";
+import styles from "./../../styles/Home.module.css";
 
 export function TopMenu() {
   return (
